@@ -27,6 +27,8 @@ public class PlayFabAdminAPI {
     
     /**
      * Gets the requested policy.
+     * @param request GetPolicyRequest
+     * @return Async Task will return GetPolicyResponse
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<GetPolicyResponse>> GetPolicyAsync(final GetPolicyRequest request) {
@@ -39,6 +41,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Gets the requested policy.
+     * @param request GetPolicyRequest
+     * @return GetPolicyResponse
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<GetPolicyResponse> GetPolicy(final GetPolicyRequest request) {
@@ -85,6 +89,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Changes a policy for a title
+     * @param request UpdatePolicyRequest
+     * @return Async Task will return UpdatePolicyResponse
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<UpdatePolicyResponse>> UpdatePolicyAsync(final UpdatePolicyRequest request) {
@@ -97,6 +103,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Changes a policy for a title
+     * @param request UpdatePolicyRequest
+     * @return UpdatePolicyResponse
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<UpdatePolicyResponse> UpdatePolicy(final UpdatePolicyRequest request) {
@@ -143,6 +151,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Bans users by PlayFab ID with optional IP address, or MAC address for the provided game.
+     * @param request BanUsersRequest
+     * @return Async Task will return BanUsersResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<BanUsersResult>> BanUsersAsync(final BanUsersRequest request) {
@@ -155,6 +165,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Bans users by PlayFab ID with optional IP address, or MAC address for the provided game.
+     * @param request BanUsersRequest
+     * @return BanUsersResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<BanUsersResult> BanUsers(final BanUsersRequest request) {
@@ -201,6 +213,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Retrieves the relevant details for a specified user, based upon a match against a supplied unique identifier
+     * @param request LookupUserAccountInfoRequest
+     * @return Async Task will return LookupUserAccountInfoResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<LookupUserAccountInfoResult>> GetUserAccountInfoAsync(final LookupUserAccountInfoRequest request) {
@@ -213,6 +227,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Retrieves the relevant details for a specified user, based upon a match against a supplied unique identifier
+     * @param request LookupUserAccountInfoRequest
+     * @return LookupUserAccountInfoResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<LookupUserAccountInfoResult> GetUserAccountInfo(final LookupUserAccountInfoRequest request) {
@@ -259,6 +275,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Gets all bans for a user.
+     * @param request GetUserBansRequest
+     * @return Async Task will return GetUserBansResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<GetUserBansResult>> GetUserBansAsync(final GetUserBansRequest request) {
@@ -271,6 +289,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Gets all bans for a user.
+     * @param request GetUserBansRequest
+     * @return GetUserBansResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<GetUserBansResult> GetUserBans(final GetUserBansRequest request) {
@@ -317,6 +337,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Resets all title-specific information about a particular account, including user data, virtual currency balances, inventory, purchase history, and statistics
+     * @param request ResetUsersRequest
+     * @return Async Task will return BlankResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<BlankResult>> ResetUsersAsync(final ResetUsersRequest request) {
@@ -329,6 +351,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Resets all title-specific information about a particular account, including user data, virtual currency balances, inventory, purchase history, and statistics
+     * @param request ResetUsersRequest
+     * @return BlankResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<BlankResult> ResetUsers(final ResetUsersRequest request) {
@@ -375,6 +399,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Revoke all active bans for a user.
+     * @param request RevokeAllBansForUserRequest
+     * @return Async Task will return RevokeAllBansForUserResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<RevokeAllBansForUserResult>> RevokeAllBansForUserAsync(final RevokeAllBansForUserRequest request) {
@@ -387,6 +413,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Revoke all active bans for a user.
+     * @param request RevokeAllBansForUserRequest
+     * @return RevokeAllBansForUserResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<RevokeAllBansForUserResult> RevokeAllBansForUser(final RevokeAllBansForUserRequest request) {
@@ -433,6 +461,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Revoke all active bans specified with BanId.
+     * @param request RevokeBansRequest
+     * @return Async Task will return RevokeBansResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<RevokeBansResult>> RevokeBansAsync(final RevokeBansRequest request) {
@@ -445,6 +475,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Revoke all active bans specified with BanId.
+     * @param request RevokeBansRequest
+     * @return RevokeBansResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<RevokeBansResult> RevokeBans(final RevokeBansRequest request) {
@@ -491,6 +523,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Forces an email to be sent to the registered email address for the specified account, with a link allowing the user to change the password
+     * @param request SendAccountRecoveryEmailRequest
+     * @return Async Task will return SendAccountRecoveryEmailResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<SendAccountRecoveryEmailResult>> SendAccountRecoveryEmailAsync(final SendAccountRecoveryEmailRequest request) {
@@ -503,6 +537,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Forces an email to be sent to the registered email address for the specified account, with a link allowing the user to change the password
+     * @param request SendAccountRecoveryEmailRequest
+     * @return SendAccountRecoveryEmailResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<SendAccountRecoveryEmailResult> SendAccountRecoveryEmail(final SendAccountRecoveryEmailRequest request) {
@@ -549,6 +585,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Updates information of a list of existing bans specified with Ban Ids.
+     * @param request UpdateBansRequest
+     * @return Async Task will return UpdateBansResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<UpdateBansResult>> UpdateBansAsync(final UpdateBansRequest request) {
@@ -561,6 +599,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Updates information of a list of existing bans specified with Ban Ids.
+     * @param request UpdateBansRequest
+     * @return UpdateBansResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<UpdateBansResult> UpdateBans(final UpdateBansRequest request) {
@@ -607,6 +647,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Updates the title specific display name for a user
+     * @param request UpdateUserTitleDisplayNameRequest
+     * @return Async Task will return UpdateUserTitleDisplayNameResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<UpdateUserTitleDisplayNameResult>> UpdateUserTitleDisplayNameAsync(final UpdateUserTitleDisplayNameRequest request) {
@@ -619,6 +661,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Updates the title specific display name for a user
+     * @param request UpdateUserTitleDisplayNameRequest
+     * @return UpdateUserTitleDisplayNameResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<UpdateUserTitleDisplayNameResult> UpdateUserTitleDisplayName(final UpdateUserTitleDisplayNameRequest request) {
@@ -665,6 +709,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Adds a new player statistic configuration to the title, optionally allowing the developer to specify a reset interval and an aggregation method.
+     * @param request CreatePlayerStatisticDefinitionRequest
+     * @return Async Task will return CreatePlayerStatisticDefinitionResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<CreatePlayerStatisticDefinitionResult>> CreatePlayerStatisticDefinitionAsync(final CreatePlayerStatisticDefinitionRequest request) {
@@ -677,6 +723,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Adds a new player statistic configuration to the title, optionally allowing the developer to specify a reset interval and an aggregation method.
+     * @param request CreatePlayerStatisticDefinitionRequest
+     * @return CreatePlayerStatisticDefinitionResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<CreatePlayerStatisticDefinitionResult> CreatePlayerStatisticDefinition(final CreatePlayerStatisticDefinitionRequest request) {
@@ -723,6 +771,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Deletes the users for the provided game. Deletes custom data, all account linkages, and statistics. This method does not remove the player's event history, login history, inventory items, nor virtual currencies.
+     * @param request DeleteUsersRequest
+     * @return Async Task will return DeleteUsersResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<DeleteUsersResult>> DeleteUsersAsync(final DeleteUsersRequest request) {
@@ -735,6 +785,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Deletes the users for the provided game. Deletes custom data, all account linkages, and statistics. This method does not remove the player's event history, login history, inventory items, nor virtual currencies.
+     * @param request DeleteUsersRequest
+     * @return DeleteUsersResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<DeleteUsersResult> DeleteUsers(final DeleteUsersRequest request) {
@@ -781,6 +833,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Retrieves a download URL for the requested report
+     * @param request GetDataReportRequest
+     * @return Async Task will return GetDataReportResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<GetDataReportResult>> GetDataReportAsync(final GetDataReportRequest request) {
@@ -793,6 +847,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Retrieves a download URL for the requested report
+     * @param request GetDataReportRequest
+     * @return GetDataReportResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<GetDataReportResult> GetDataReport(final GetDataReportRequest request) {
@@ -839,6 +895,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Retrieves the configuration information for all player statistics defined in the title, regardless of whether they have a reset interval.
+     * @param request GetPlayerStatisticDefinitionsRequest
+     * @return Async Task will return GetPlayerStatisticDefinitionsResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<GetPlayerStatisticDefinitionsResult>> GetPlayerStatisticDefinitionsAsync(final GetPlayerStatisticDefinitionsRequest request) {
@@ -851,6 +909,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Retrieves the configuration information for all player statistics defined in the title, regardless of whether they have a reset interval.
+     * @param request GetPlayerStatisticDefinitionsRequest
+     * @return GetPlayerStatisticDefinitionsResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<GetPlayerStatisticDefinitionsResult> GetPlayerStatisticDefinitions(final GetPlayerStatisticDefinitionsRequest request) {
@@ -897,6 +957,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Retrieves the information on the available versions of the specified statistic.
+     * @param request GetPlayerStatisticVersionsRequest
+     * @return Async Task will return GetPlayerStatisticVersionsResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<GetPlayerStatisticVersionsResult>> GetPlayerStatisticVersionsAsync(final GetPlayerStatisticVersionsRequest request) {
@@ -909,6 +971,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Retrieves the information on the available versions of the specified statistic.
+     * @param request GetPlayerStatisticVersionsRequest
+     * @return GetPlayerStatisticVersionsResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<GetPlayerStatisticVersionsResult> GetPlayerStatisticVersions(final GetPlayerStatisticVersionsRequest request) {
@@ -955,6 +1019,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Retrieves the title-specific custom data for the user which is readable and writable by the client
+     * @param request GetUserDataRequest
+     * @return Async Task will return GetUserDataResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<GetUserDataResult>> GetUserDataAsync(final GetUserDataRequest request) {
@@ -967,6 +1033,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Retrieves the title-specific custom data for the user which is readable and writable by the client
+     * @param request GetUserDataRequest
+     * @return GetUserDataResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<GetUserDataResult> GetUserData(final GetUserDataRequest request) {
@@ -1013,6 +1081,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Retrieves the title-specific custom data for the user which cannot be accessed by the client
+     * @param request GetUserDataRequest
+     * @return Async Task will return GetUserDataResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<GetUserDataResult>> GetUserInternalDataAsync(final GetUserDataRequest request) {
@@ -1025,6 +1095,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Retrieves the title-specific custom data for the user which cannot be accessed by the client
+     * @param request GetUserDataRequest
+     * @return GetUserDataResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<GetUserDataResult> GetUserInternalData(final GetUserDataRequest request) {
@@ -1071,6 +1143,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Retrieves the publisher-specific custom data for the user which is readable and writable by the client
+     * @param request GetUserDataRequest
+     * @return Async Task will return GetUserDataResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<GetUserDataResult>> GetUserPublisherDataAsync(final GetUserDataRequest request) {
@@ -1083,6 +1157,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Retrieves the publisher-specific custom data for the user which is readable and writable by the client
+     * @param request GetUserDataRequest
+     * @return GetUserDataResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<GetUserDataResult> GetUserPublisherData(final GetUserDataRequest request) {
@@ -1129,6 +1205,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Retrieves the publisher-specific custom data for the user which cannot be accessed by the client
+     * @param request GetUserDataRequest
+     * @return Async Task will return GetUserDataResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<GetUserDataResult>> GetUserPublisherInternalDataAsync(final GetUserDataRequest request) {
@@ -1141,6 +1219,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Retrieves the publisher-specific custom data for the user which cannot be accessed by the client
+     * @param request GetUserDataRequest
+     * @return GetUserDataResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<GetUserDataResult> GetUserPublisherInternalData(final GetUserDataRequest request) {
@@ -1187,6 +1267,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Retrieves the publisher-specific custom data for the user which can only be read by the client
+     * @param request GetUserDataRequest
+     * @return Async Task will return GetUserDataResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<GetUserDataResult>> GetUserPublisherReadOnlyDataAsync(final GetUserDataRequest request) {
@@ -1199,6 +1281,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Retrieves the publisher-specific custom data for the user which can only be read by the client
+     * @param request GetUserDataRequest
+     * @return GetUserDataResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<GetUserDataResult> GetUserPublisherReadOnlyData(final GetUserDataRequest request) {
@@ -1245,6 +1329,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Retrieves the title-specific custom data for the user which can only be read by the client
+     * @param request GetUserDataRequest
+     * @return Async Task will return GetUserDataResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<GetUserDataResult>> GetUserReadOnlyDataAsync(final GetUserDataRequest request) {
@@ -1257,6 +1343,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Retrieves the title-specific custom data for the user which can only be read by the client
+     * @param request GetUserDataRequest
+     * @return GetUserDataResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<GetUserDataResult> GetUserReadOnlyData(final GetUserDataRequest request) {
@@ -1303,6 +1391,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Resets the indicated statistic, removing all player entries for it and backing up the old values.
+     * @param request IncrementPlayerStatisticVersionRequest
+     * @return Async Task will return IncrementPlayerStatisticVersionResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<IncrementPlayerStatisticVersionResult>> IncrementPlayerStatisticVersionAsync(final IncrementPlayerStatisticVersionRequest request) {
@@ -1315,6 +1405,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Resets the indicated statistic, removing all player entries for it and backing up the old values.
+     * @param request IncrementPlayerStatisticVersionRequest
+     * @return IncrementPlayerStatisticVersionResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<IncrementPlayerStatisticVersionResult> IncrementPlayerStatisticVersion(final IncrementPlayerStatisticVersionRequest request) {
@@ -1361,6 +1453,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Attempts to process an order refund through the original real money payment provider.
+     * @param request RefundPurchaseRequest
+     * @return Async Task will return RefundPurchaseResponse
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<RefundPurchaseResponse>> RefundPurchaseAsync(final RefundPurchaseRequest request) {
@@ -1373,6 +1467,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Attempts to process an order refund through the original real money payment provider.
+     * @param request RefundPurchaseRequest
+     * @return RefundPurchaseResponse
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<RefundPurchaseResponse> RefundPurchase(final RefundPurchaseRequest request) {
@@ -1419,6 +1515,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Completely removes all statistics for the specified user, for the current game
+     * @param request ResetUserStatisticsRequest
+     * @return Async Task will return ResetUserStatisticsResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<ResetUserStatisticsResult>> ResetUserStatisticsAsync(final ResetUserStatisticsRequest request) {
@@ -1431,6 +1529,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Completely removes all statistics for the specified user, for the current game
+     * @param request ResetUserStatisticsRequest
+     * @return ResetUserStatisticsResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<ResetUserStatisticsResult> ResetUserStatistics(final ResetUserStatisticsRequest request) {
@@ -1477,6 +1577,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Attempts to resolve a dispute with the original order's payment provider.
+     * @param request ResolvePurchaseDisputeRequest
+     * @return Async Task will return ResolvePurchaseDisputeResponse
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<ResolvePurchaseDisputeResponse>> ResolvePurchaseDisputeAsync(final ResolvePurchaseDisputeRequest request) {
@@ -1489,6 +1591,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Attempts to resolve a dispute with the original order's payment provider.
+     * @param request ResolvePurchaseDisputeRequest
+     * @return ResolvePurchaseDisputeResponse
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<ResolvePurchaseDisputeResponse> ResolvePurchaseDispute(final ResolvePurchaseDisputeRequest request) {
@@ -1535,6 +1639,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Updates a player statistic configuration for the title, optionally allowing the developer to specify a reset interval.
+     * @param request UpdatePlayerStatisticDefinitionRequest
+     * @return Async Task will return UpdatePlayerStatisticDefinitionResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<UpdatePlayerStatisticDefinitionResult>> UpdatePlayerStatisticDefinitionAsync(final UpdatePlayerStatisticDefinitionRequest request) {
@@ -1547,6 +1653,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Updates a player statistic configuration for the title, optionally allowing the developer to specify a reset interval.
+     * @param request UpdatePlayerStatisticDefinitionRequest
+     * @return UpdatePlayerStatisticDefinitionResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<UpdatePlayerStatisticDefinitionResult> UpdatePlayerStatisticDefinition(final UpdatePlayerStatisticDefinitionRequest request) {
@@ -1593,6 +1701,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Updates the title-specific custom data for the user which is readable and writable by the client
+     * @param request UpdateUserDataRequest
+     * @return Async Task will return UpdateUserDataResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<UpdateUserDataResult>> UpdateUserDataAsync(final UpdateUserDataRequest request) {
@@ -1605,6 +1715,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Updates the title-specific custom data for the user which is readable and writable by the client
+     * @param request UpdateUserDataRequest
+     * @return UpdateUserDataResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<UpdateUserDataResult> UpdateUserData(final UpdateUserDataRequest request) {
@@ -1651,6 +1763,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Updates the title-specific custom data for the user which cannot be accessed by the client
+     * @param request UpdateUserInternalDataRequest
+     * @return Async Task will return UpdateUserDataResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<UpdateUserDataResult>> UpdateUserInternalDataAsync(final UpdateUserInternalDataRequest request) {
@@ -1663,6 +1777,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Updates the title-specific custom data for the user which cannot be accessed by the client
+     * @param request UpdateUserInternalDataRequest
+     * @return UpdateUserDataResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<UpdateUserDataResult> UpdateUserInternalData(final UpdateUserInternalDataRequest request) {
@@ -1709,6 +1825,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Updates the publisher-specific custom data for the user which is readable and writable by the client
+     * @param request UpdateUserDataRequest
+     * @return Async Task will return UpdateUserDataResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<UpdateUserDataResult>> UpdateUserPublisherDataAsync(final UpdateUserDataRequest request) {
@@ -1721,6 +1839,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Updates the publisher-specific custom data for the user which is readable and writable by the client
+     * @param request UpdateUserDataRequest
+     * @return UpdateUserDataResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<UpdateUserDataResult> UpdateUserPublisherData(final UpdateUserDataRequest request) {
@@ -1767,6 +1887,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Updates the publisher-specific custom data for the user which cannot be accessed by the client
+     * @param request UpdateUserInternalDataRequest
+     * @return Async Task will return UpdateUserDataResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<UpdateUserDataResult>> UpdateUserPublisherInternalDataAsync(final UpdateUserInternalDataRequest request) {
@@ -1779,6 +1901,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Updates the publisher-specific custom data for the user which cannot be accessed by the client
+     * @param request UpdateUserInternalDataRequest
+     * @return UpdateUserDataResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<UpdateUserDataResult> UpdateUserPublisherInternalData(final UpdateUserInternalDataRequest request) {
@@ -1825,6 +1949,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Updates the publisher-specific custom data for the user which can only be read by the client
+     * @param request UpdateUserDataRequest
+     * @return Async Task will return UpdateUserDataResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<UpdateUserDataResult>> UpdateUserPublisherReadOnlyDataAsync(final UpdateUserDataRequest request) {
@@ -1837,6 +1963,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Updates the publisher-specific custom data for the user which can only be read by the client
+     * @param request UpdateUserDataRequest
+     * @return UpdateUserDataResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<UpdateUserDataResult> UpdateUserPublisherReadOnlyData(final UpdateUserDataRequest request) {
@@ -1883,6 +2011,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Updates the title-specific custom data for the user which can only be read by the client
+     * @param request UpdateUserDataRequest
+     * @return Async Task will return UpdateUserDataResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<UpdateUserDataResult>> UpdateUserReadOnlyDataAsync(final UpdateUserDataRequest request) {
@@ -1895,6 +2025,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Updates the title-specific custom data for the user which can only be read by the client
+     * @param request UpdateUserDataRequest
+     * @return UpdateUserDataResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<UpdateUserDataResult> UpdateUserReadOnlyData(final UpdateUserDataRequest request) {
@@ -1941,6 +2073,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Adds a new news item to the title's news feed
+     * @param request AddNewsRequest
+     * @return Async Task will return AddNewsResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<AddNewsResult>> AddNewsAsync(final AddNewsRequest request) {
@@ -1953,6 +2087,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Adds a new news item to the title's news feed
+     * @param request AddNewsRequest
+     * @return AddNewsResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<AddNewsResult> AddNews(final AddNewsRequest request) {
@@ -1999,6 +2135,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Adds one or more virtual currencies to the set defined for the title. Virtual Currencies have a maximum value of 2,147,483,647 when granted to a player. Any value over that will be discarded.
+     * @param request AddVirtualCurrencyTypesRequest
+     * @return Async Task will return BlankResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<BlankResult>> AddVirtualCurrencyTypesAsync(final AddVirtualCurrencyTypesRequest request) {
@@ -2011,6 +2149,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Adds one or more virtual currencies to the set defined for the title. Virtual Currencies have a maximum value of 2,147,483,647 when granted to a player. Any value over that will be discarded.
+     * @param request AddVirtualCurrencyTypesRequest
+     * @return BlankResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<BlankResult> AddVirtualCurrencyTypes(final AddVirtualCurrencyTypesRequest request) {
@@ -2057,6 +2197,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Deletes an existing virtual item store
+     * @param request DeleteStoreRequest
+     * @return Async Task will return DeleteStoreResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<DeleteStoreResult>> DeleteStoreAsync(final DeleteStoreRequest request) {
@@ -2069,6 +2211,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Deletes an existing virtual item store
+     * @param request DeleteStoreRequest
+     * @return DeleteStoreResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<DeleteStoreResult> DeleteStore(final DeleteStoreRequest request) {
@@ -2115,6 +2259,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Retrieves the specified version of the title's catalog of virtual goods, including all defined properties
+     * @param request GetCatalogItemsRequest
+     * @return Async Task will return GetCatalogItemsResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<GetCatalogItemsResult>> GetCatalogItemsAsync(final GetCatalogItemsRequest request) {
@@ -2127,6 +2273,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Retrieves the specified version of the title's catalog of virtual goods, including all defined properties
+     * @param request GetCatalogItemsRequest
+     * @return GetCatalogItemsResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<GetCatalogItemsResult> GetCatalogItems(final GetCatalogItemsRequest request) {
@@ -2173,6 +2321,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Retrieves the key-value store of custom publisher settings
+     * @param request GetPublisherDataRequest
+     * @return Async Task will return GetPublisherDataResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<GetPublisherDataResult>> GetPublisherDataAsync(final GetPublisherDataRequest request) {
@@ -2185,6 +2335,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Retrieves the key-value store of custom publisher settings
+     * @param request GetPublisherDataRequest
+     * @return GetPublisherDataResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<GetPublisherDataResult> GetPublisherData(final GetPublisherDataRequest request) {
@@ -2231,6 +2383,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Retrieves the random drop table configuration for the title
+     * @param request GetRandomResultTablesRequest
+     * @return Async Task will return GetRandomResultTablesResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<GetRandomResultTablesResult>> GetRandomResultTablesAsync(final GetRandomResultTablesRequest request) {
@@ -2243,6 +2397,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Retrieves the random drop table configuration for the title
+     * @param request GetRandomResultTablesRequest
+     * @return GetRandomResultTablesResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<GetRandomResultTablesResult> GetRandomResultTables(final GetRandomResultTablesRequest request) {
@@ -2289,6 +2445,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Retrieves the set of items defined for the specified store, including all prices defined
+     * @param request GetStoreItemsRequest
+     * @return Async Task will return GetStoreItemsResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<GetStoreItemsResult>> GetStoreItemsAsync(final GetStoreItemsRequest request) {
@@ -2301,6 +2459,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Retrieves the set of items defined for the specified store, including all prices defined
+     * @param request GetStoreItemsRequest
+     * @return GetStoreItemsResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<GetStoreItemsResult> GetStoreItems(final GetStoreItemsRequest request) {
@@ -2347,6 +2507,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Retrieves the key-value store of custom title settings which can be read by the client
+     * @param request GetTitleDataRequest
+     * @return Async Task will return GetTitleDataResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<GetTitleDataResult>> GetTitleDataAsync(final GetTitleDataRequest request) {
@@ -2359,6 +2521,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Retrieves the key-value store of custom title settings which can be read by the client
+     * @param request GetTitleDataRequest
+     * @return GetTitleDataResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<GetTitleDataResult> GetTitleData(final GetTitleDataRequest request) {
@@ -2405,6 +2569,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Retrieves the key-value store of custom title settings which cannot be read by the client
+     * @param request GetTitleDataRequest
+     * @return Async Task will return GetTitleDataResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<GetTitleDataResult>> GetTitleInternalDataAsync(final GetTitleDataRequest request) {
@@ -2417,6 +2583,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Retrieves the key-value store of custom title settings which cannot be read by the client
+     * @param request GetTitleDataRequest
+     * @return GetTitleDataResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<GetTitleDataResult> GetTitleInternalData(final GetTitleDataRequest request) {
@@ -2463,6 +2631,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Retuns the list of all defined virtual currencies for the title
+     * @param request ListVirtualCurrencyTypesRequest
+     * @return Async Task will return ListVirtualCurrencyTypesResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<ListVirtualCurrencyTypesResult>> ListVirtualCurrencyTypesAsync(final ListVirtualCurrencyTypesRequest request) {
@@ -2475,6 +2645,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Retuns the list of all defined virtual currencies for the title
+     * @param request ListVirtualCurrencyTypesRequest
+     * @return ListVirtualCurrencyTypesResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<ListVirtualCurrencyTypesResult> ListVirtualCurrencyTypes(final ListVirtualCurrencyTypesRequest request) {
@@ -2521,6 +2693,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Removes one or more virtual currencies from the set defined for the title.
+     * @param request RemoveVirtualCurrencyTypesRequest
+     * @return Async Task will return BlankResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<BlankResult>> RemoveVirtualCurrencyTypesAsync(final RemoveVirtualCurrencyTypesRequest request) {
@@ -2533,6 +2707,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Removes one or more virtual currencies from the set defined for the title.
+     * @param request RemoveVirtualCurrencyTypesRequest
+     * @return BlankResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<BlankResult> RemoveVirtualCurrencyTypes(final RemoveVirtualCurrencyTypesRequest request) {
@@ -2579,6 +2755,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Creates the catalog configuration of all virtual goods for the specified catalog version
+     * @param request UpdateCatalogItemsRequest
+     * @return Async Task will return UpdateCatalogItemsResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<UpdateCatalogItemsResult>> SetCatalogItemsAsync(final UpdateCatalogItemsRequest request) {
@@ -2591,6 +2769,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Creates the catalog configuration of all virtual goods for the specified catalog version
+     * @param request UpdateCatalogItemsRequest
+     * @return UpdateCatalogItemsResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<UpdateCatalogItemsResult> SetCatalogItems(final UpdateCatalogItemsRequest request) {
@@ -2637,6 +2817,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Sets all the items in one virtual store
+     * @param request UpdateStoreItemsRequest
+     * @return Async Task will return UpdateStoreItemsResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<UpdateStoreItemsResult>> SetStoreItemsAsync(final UpdateStoreItemsRequest request) {
@@ -2649,6 +2831,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Sets all the items in one virtual store
+     * @param request UpdateStoreItemsRequest
+     * @return UpdateStoreItemsResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<UpdateStoreItemsResult> SetStoreItems(final UpdateStoreItemsRequest request) {
@@ -2695,6 +2879,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Creates and updates the key-value store of custom title settings which can be read by the client
+     * @param request SetTitleDataRequest
+     * @return Async Task will return SetTitleDataResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<SetTitleDataResult>> SetTitleDataAsync(final SetTitleDataRequest request) {
@@ -2707,6 +2893,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Creates and updates the key-value store of custom title settings which can be read by the client
+     * @param request SetTitleDataRequest
+     * @return SetTitleDataResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<SetTitleDataResult> SetTitleData(final SetTitleDataRequest request) {
@@ -2753,6 +2941,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Updates the key-value store of custom title settings which cannot be read by the client
+     * @param request SetTitleDataRequest
+     * @return Async Task will return SetTitleDataResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<SetTitleDataResult>> SetTitleInternalDataAsync(final SetTitleDataRequest request) {
@@ -2765,6 +2955,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Updates the key-value store of custom title settings which cannot be read by the client
+     * @param request SetTitleDataRequest
+     * @return SetTitleDataResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<SetTitleDataResult> SetTitleInternalData(final SetTitleDataRequest request) {
@@ -2811,6 +3003,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Sets the Amazon Resource Name (ARN) for iOS and Android push notifications. Documentation on the exact restrictions can be found at: http://docs.aws.amazon.com/sns/latest/api/API_CreatePlatformApplication.html. Currently, Amazon device Messaging is not supported.
+     * @param request SetupPushNotificationRequest
+     * @return Async Task will return SetupPushNotificationResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<SetupPushNotificationResult>> SetupPushNotificationAsync(final SetupPushNotificationRequest request) {
@@ -2823,6 +3017,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Sets the Amazon Resource Name (ARN) for iOS and Android push notifications. Documentation on the exact restrictions can be found at: http://docs.aws.amazon.com/sns/latest/api/API_CreatePlatformApplication.html. Currently, Amazon device Messaging is not supported.
+     * @param request SetupPushNotificationRequest
+     * @return SetupPushNotificationResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<SetupPushNotificationResult> SetupPushNotification(final SetupPushNotificationRequest request) {
@@ -2869,6 +3065,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Updates the catalog configuration for virtual goods in the specified catalog version
+     * @param request UpdateCatalogItemsRequest
+     * @return Async Task will return UpdateCatalogItemsResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<UpdateCatalogItemsResult>> UpdateCatalogItemsAsync(final UpdateCatalogItemsRequest request) {
@@ -2881,6 +3079,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Updates the catalog configuration for virtual goods in the specified catalog version
+     * @param request UpdateCatalogItemsRequest
+     * @return UpdateCatalogItemsResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<UpdateCatalogItemsResult> UpdateCatalogItems(final UpdateCatalogItemsRequest request) {
@@ -2927,6 +3127,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Updates the random drop table configuration for the title
+     * @param request UpdateRandomResultTablesRequest
+     * @return Async Task will return UpdateRandomResultTablesResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<UpdateRandomResultTablesResult>> UpdateRandomResultTablesAsync(final UpdateRandomResultTablesRequest request) {
@@ -2939,6 +3141,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Updates the random drop table configuration for the title
+     * @param request UpdateRandomResultTablesRequest
+     * @return UpdateRandomResultTablesResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<UpdateRandomResultTablesResult> UpdateRandomResultTables(final UpdateRandomResultTablesRequest request) {
@@ -2985,6 +3189,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Updates an existing virtual item store with new or modified items
+     * @param request UpdateStoreItemsRequest
+     * @return Async Task will return UpdateStoreItemsResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<UpdateStoreItemsResult>> UpdateStoreItemsAsync(final UpdateStoreItemsRequest request) {
@@ -2997,6 +3203,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Updates an existing virtual item store with new or modified items
+     * @param request UpdateStoreItemsRequest
+     * @return UpdateStoreItemsResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<UpdateStoreItemsResult> UpdateStoreItems(final UpdateStoreItemsRequest request) {
@@ -3043,6 +3251,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Increments the specified virtual currency by the stated amount
+     * @param request AddUserVirtualCurrencyRequest
+     * @return Async Task will return ModifyUserVirtualCurrencyResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<ModifyUserVirtualCurrencyResult>> AddUserVirtualCurrencyAsync(final AddUserVirtualCurrencyRequest request) {
@@ -3055,6 +3265,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Increments the specified virtual currency by the stated amount
+     * @param request AddUserVirtualCurrencyRequest
+     * @return ModifyUserVirtualCurrencyResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<ModifyUserVirtualCurrencyResult> AddUserVirtualCurrency(final AddUserVirtualCurrencyRequest request) {
@@ -3101,6 +3313,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Retrieves the specified user's current inventory of virtual goods
+     * @param request GetUserInventoryRequest
+     * @return Async Task will return GetUserInventoryResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<GetUserInventoryResult>> GetUserInventoryAsync(final GetUserInventoryRequest request) {
@@ -3113,6 +3327,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Retrieves the specified user's current inventory of virtual goods
+     * @param request GetUserInventoryRequest
+     * @return GetUserInventoryResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<GetUserInventoryResult> GetUserInventory(final GetUserInventoryRequest request) {
@@ -3159,6 +3375,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Adds the specified items to the specified user inventories
+     * @param request GrantItemsToUsersRequest
+     * @return Async Task will return GrantItemsToUsersResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<GrantItemsToUsersResult>> GrantItemsToUsersAsync(final GrantItemsToUsersRequest request) {
@@ -3171,6 +3389,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Adds the specified items to the specified user inventories
+     * @param request GrantItemsToUsersRequest
+     * @return GrantItemsToUsersResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<GrantItemsToUsersResult> GrantItemsToUsers(final GrantItemsToUsersRequest request) {
@@ -3217,6 +3437,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Revokes access to an item in a user's inventory
+     * @param request RevokeInventoryItemRequest
+     * @return Async Task will return RevokeInventoryResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<RevokeInventoryResult>> RevokeInventoryItemAsync(final RevokeInventoryItemRequest request) {
@@ -3229,6 +3451,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Revokes access to an item in a user's inventory
+     * @param request RevokeInventoryItemRequest
+     * @return RevokeInventoryResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<RevokeInventoryResult> RevokeInventoryItem(final RevokeInventoryItemRequest request) {
@@ -3275,6 +3499,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Decrements the specified virtual currency by the stated amount
+     * @param request SubtractUserVirtualCurrencyRequest
+     * @return Async Task will return ModifyUserVirtualCurrencyResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<ModifyUserVirtualCurrencyResult>> SubtractUserVirtualCurrencyAsync(final SubtractUserVirtualCurrencyRequest request) {
@@ -3287,6 +3513,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Decrements the specified virtual currency by the stated amount
+     * @param request SubtractUserVirtualCurrencyRequest
+     * @return ModifyUserVirtualCurrencyResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<ModifyUserVirtualCurrencyResult> SubtractUserVirtualCurrency(final SubtractUserVirtualCurrencyRequest request) {
@@ -3333,6 +3561,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Retrieves the details for a specific completed session, including links to standard out and standard error logs
+     * @param request GetMatchmakerGameInfoRequest
+     * @return Async Task will return GetMatchmakerGameInfoResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<GetMatchmakerGameInfoResult>> GetMatchmakerGameInfoAsync(final GetMatchmakerGameInfoRequest request) {
@@ -3345,6 +3575,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Retrieves the details for a specific completed session, including links to standard out and standard error logs
+     * @param request GetMatchmakerGameInfoRequest
+     * @return GetMatchmakerGameInfoResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<GetMatchmakerGameInfoResult> GetMatchmakerGameInfo(final GetMatchmakerGameInfoRequest request) {
@@ -3391,6 +3623,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Retrieves the details of defined game modes for the specified game server executable
+     * @param request GetMatchmakerGameModesRequest
+     * @return Async Task will return GetMatchmakerGameModesResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<GetMatchmakerGameModesResult>> GetMatchmakerGameModesAsync(final GetMatchmakerGameModesRequest request) {
@@ -3403,6 +3637,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Retrieves the details of defined game modes for the specified game server executable
+     * @param request GetMatchmakerGameModesRequest
+     * @return GetMatchmakerGameModesResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<GetMatchmakerGameModesResult> GetMatchmakerGameModes(final GetMatchmakerGameModesRequest request) {
@@ -3449,6 +3685,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Updates the game server mode details for the specified game server executable
+     * @param request ModifyMatchmakerGameModesRequest
+     * @return Async Task will return ModifyMatchmakerGameModesResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<ModifyMatchmakerGameModesResult>> ModifyMatchmakerGameModesAsync(final ModifyMatchmakerGameModesRequest request) {
@@ -3461,6 +3699,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Updates the game server mode details for the specified game server executable
+     * @param request ModifyMatchmakerGameModesRequest
+     * @return ModifyMatchmakerGameModesResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<ModifyMatchmakerGameModesResult> ModifyMatchmakerGameModes(final ModifyMatchmakerGameModesRequest request) {
@@ -3507,6 +3747,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Adds the game server executable specified (previously uploaded - see GetServerBuildUploadUrl) to the set of those a client is permitted to request in a call to StartGame
+     * @param request AddServerBuildRequest
+     * @return Async Task will return AddServerBuildResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<AddServerBuildResult>> AddServerBuildAsync(final AddServerBuildRequest request) {
@@ -3519,6 +3761,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Adds the game server executable specified (previously uploaded - see GetServerBuildUploadUrl) to the set of those a client is permitted to request in a call to StartGame
+     * @param request AddServerBuildRequest
+     * @return AddServerBuildResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<AddServerBuildResult> AddServerBuild(final AddServerBuildRequest request) {
@@ -3565,6 +3809,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Retrieves the build details for the specified game server executable
+     * @param request GetServerBuildInfoRequest
+     * @return Async Task will return GetServerBuildInfoResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<GetServerBuildInfoResult>> GetServerBuildInfoAsync(final GetServerBuildInfoRequest request) {
@@ -3577,6 +3823,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Retrieves the build details for the specified game server executable
+     * @param request GetServerBuildInfoRequest
+     * @return GetServerBuildInfoResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<GetServerBuildInfoResult> GetServerBuildInfo(final GetServerBuildInfoRequest request) {
@@ -3623,6 +3871,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Retrieves the pre-authorized URL for uploading a game server package containing a build (does not enable the build for use - see AddServerBuild)
+     * @param request GetServerBuildUploadURLRequest
+     * @return Async Task will return GetServerBuildUploadURLResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<GetServerBuildUploadURLResult>> GetServerBuildUploadUrlAsync(final GetServerBuildUploadURLRequest request) {
@@ -3635,6 +3885,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Retrieves the pre-authorized URL for uploading a game server package containing a build (does not enable the build for use - see AddServerBuild)
+     * @param request GetServerBuildUploadURLRequest
+     * @return GetServerBuildUploadURLResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<GetServerBuildUploadURLResult> GetServerBuildUploadUrl(final GetServerBuildUploadURLRequest request) {
@@ -3681,6 +3933,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Retrieves the build details for all game server executables which are currently defined for the title
+     * @param request ListBuildsRequest
+     * @return Async Task will return ListBuildsResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<ListBuildsResult>> ListServerBuildsAsync(final ListBuildsRequest request) {
@@ -3693,6 +3947,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Retrieves the build details for all game server executables which are currently defined for the title
+     * @param request ListBuildsRequest
+     * @return ListBuildsResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<ListBuildsResult> ListServerBuilds(final ListBuildsRequest request) {
@@ -3739,6 +3995,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Updates the build details for the specified game server executable
+     * @param request ModifyServerBuildRequest
+     * @return Async Task will return ModifyServerBuildResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<ModifyServerBuildResult>> ModifyServerBuildAsync(final ModifyServerBuildRequest request) {
@@ -3751,6 +4009,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Updates the build details for the specified game server executable
+     * @param request ModifyServerBuildRequest
+     * @return ModifyServerBuildResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<ModifyServerBuildResult> ModifyServerBuild(final ModifyServerBuildRequest request) {
@@ -3797,6 +4057,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Removes the game server executable specified from the set of those a client is permitted to request in a call to StartGame
+     * @param request RemoveServerBuildRequest
+     * @return Async Task will return RemoveServerBuildResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<RemoveServerBuildResult>> RemoveServerBuildAsync(final RemoveServerBuildRequest request) {
@@ -3809,6 +4071,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Removes the game server executable specified from the set of those a client is permitted to request in a call to StartGame
+     * @param request RemoveServerBuildRequest
+     * @return RemoveServerBuildResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<RemoveServerBuildResult> RemoveServerBuild(final RemoveServerBuildRequest request) {
@@ -3855,6 +4119,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Updates the key-value store of custom publisher settings
+     * @param request SetPublisherDataRequest
+     * @return Async Task will return SetPublisherDataResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<SetPublisherDataResult>> SetPublisherDataAsync(final SetPublisherDataRequest request) {
@@ -3867,6 +4133,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Updates the key-value store of custom publisher settings
+     * @param request SetPublisherDataRequest
+     * @return SetPublisherDataResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<SetPublisherDataResult> SetPublisherData(final SetPublisherDataRequest request) {
@@ -3913,6 +4181,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Gets the contents and information of a specific Cloud Script revision.
+     * @param request GetCloudScriptRevisionRequest
+     * @return Async Task will return GetCloudScriptRevisionResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<GetCloudScriptRevisionResult>> GetCloudScriptRevisionAsync(final GetCloudScriptRevisionRequest request) {
@@ -3925,6 +4195,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Gets the contents and information of a specific Cloud Script revision.
+     * @param request GetCloudScriptRevisionRequest
+     * @return GetCloudScriptRevisionResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<GetCloudScriptRevisionResult> GetCloudScriptRevision(final GetCloudScriptRevisionRequest request) {
@@ -3971,6 +4243,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Lists all the current cloud script versions. For each version, information about the current published and latest revisions is also listed.
+     * @param request GetCloudScriptVersionsRequest
+     * @return Async Task will return GetCloudScriptVersionsResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<GetCloudScriptVersionsResult>> GetCloudScriptVersionsAsync(final GetCloudScriptVersionsRequest request) {
@@ -3983,6 +4257,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Lists all the current cloud script versions. For each version, information about the current published and latest revisions is also listed.
+     * @param request GetCloudScriptVersionsRequest
+     * @return GetCloudScriptVersionsResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<GetCloudScriptVersionsResult> GetCloudScriptVersions(final GetCloudScriptVersionsRequest request) {
@@ -4029,6 +4305,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Sets the currently published revision of a title Cloud Script
+     * @param request SetPublishedRevisionRequest
+     * @return Async Task will return SetPublishedRevisionResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<SetPublishedRevisionResult>> SetPublishedRevisionAsync(final SetPublishedRevisionRequest request) {
@@ -4041,6 +4319,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Sets the currently published revision of a title Cloud Script
+     * @param request SetPublishedRevisionRequest
+     * @return SetPublishedRevisionResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<SetPublishedRevisionResult> SetPublishedRevision(final SetPublishedRevisionRequest request) {
@@ -4087,6 +4367,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Creates a new Cloud Script revision and uploads source code to it. Note that at this time, only one file should be submitted in the revision.
+     * @param request UpdateCloudScriptRequest
+     * @return Async Task will return UpdateCloudScriptResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<UpdateCloudScriptResult>> UpdateCloudScriptAsync(final UpdateCloudScriptRequest request) {
@@ -4099,6 +4381,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Creates a new Cloud Script revision and uploads source code to it. Note that at this time, only one file should be submitted in the revision.
+     * @param request UpdateCloudScriptRequest
+     * @return UpdateCloudScriptResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<UpdateCloudScriptResult> UpdateCloudScript(final UpdateCloudScriptRequest request) {
@@ -4145,6 +4429,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Delete a content file from the title
+     * @param request DeleteContentRequest
+     * @return Async Task will return BlankResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<BlankResult>> DeleteContentAsync(final DeleteContentRequest request) {
@@ -4157,6 +4443,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Delete a content file from the title
+     * @param request DeleteContentRequest
+     * @return BlankResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<BlankResult> DeleteContent(final DeleteContentRequest request) {
@@ -4203,6 +4491,8 @@ public class PlayFabAdminAPI {
 
     /**
      * List all contents of the title and get statistics such as size
+     * @param request GetContentListRequest
+     * @return Async Task will return GetContentListResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<GetContentListResult>> GetContentListAsync(final GetContentListRequest request) {
@@ -4215,6 +4505,8 @@ public class PlayFabAdminAPI {
 
     /**
      * List all contents of the title and get statistics such as size
+     * @param request GetContentListRequest
+     * @return GetContentListResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<GetContentListResult> GetContentList(final GetContentListRequest request) {
@@ -4261,6 +4553,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Retrieves the pre-signed URL for uploading a content file. A subsequent HTTP PUT to the returned URL uploads the  content. Also, please be aware that the Content service is specifically PlayFab's CDN offering, for which standard CDN rates apply.
+     * @param request GetContentUploadUrlRequest
+     * @return Async Task will return GetContentUploadUrlResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<GetContentUploadUrlResult>> GetContentUploadUrlAsync(final GetContentUploadUrlRequest request) {
@@ -4273,6 +4567,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Retrieves the pre-signed URL for uploading a content file. A subsequent HTTP PUT to the returned URL uploads the  content. Also, please be aware that the Content service is specifically PlayFab's CDN offering, for which standard CDN rates apply.
+     * @param request GetContentUploadUrlRequest
+     * @return GetContentUploadUrlResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<GetContentUploadUrlResult> GetContentUploadUrl(final GetContentUploadUrlRequest request) {
@@ -4319,6 +4615,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Completely removes all statistics for the specified character, for the current game
+     * @param request ResetCharacterStatisticsRequest
+     * @return Async Task will return ResetCharacterStatisticsResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<ResetCharacterStatisticsResult>> ResetCharacterStatisticsAsync(final ResetCharacterStatisticsRequest request) {
@@ -4331,6 +4629,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Completely removes all statistics for the specified character, for the current game
+     * @param request ResetCharacterStatisticsRequest
+     * @return ResetCharacterStatisticsResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<ResetCharacterStatisticsResult> ResetCharacterStatistics(final ResetCharacterStatisticsRequest request) {
@@ -4377,6 +4677,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Adds a given tag to a player profile. The tag's namespace is automatically generated based on the source of the tag.
+     * @param request AddPlayerTagRequest
+     * @return Async Task will return AddPlayerTagResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<AddPlayerTagResult>> AddPlayerTagAsync(final AddPlayerTagRequest request) {
@@ -4389,6 +4691,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Adds a given tag to a player profile. The tag's namespace is automatically generated based on the source of the tag.
+     * @param request AddPlayerTagRequest
+     * @return AddPlayerTagResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<AddPlayerTagResult> AddPlayerTag(final AddPlayerTagRequest request) {
@@ -4435,6 +4739,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Retrieve a list of all PlayStream actions groups.
+     * @param request GetAllActionGroupsRequest
+     * @return Async Task will return GetAllActionGroupsResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<GetAllActionGroupsResult>> GetAllActionGroupsAsync(final GetAllActionGroupsRequest request) {
@@ -4447,6 +4753,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Retrieve a list of all PlayStream actions groups.
+     * @param request GetAllActionGroupsRequest
+     * @return GetAllActionGroupsResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<GetAllActionGroupsResult> GetAllActionGroups(final GetAllActionGroupsRequest request) {
@@ -4493,6 +4801,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Retrieves an array of player segment definitions. Results from this can be used in subsequent API calls such as GetPlayersInSegment which requires a Segment ID. While segment names can change the ID for that segment will not change.
+     * @param request GetAllSegmentsRequest
+     * @return Async Task will return GetAllSegmentsResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<GetAllSegmentsResult>> GetAllSegmentsAsync(final GetAllSegmentsRequest request) {
@@ -4505,6 +4815,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Retrieves an array of player segment definitions. Results from this can be used in subsequent API calls such as GetPlayersInSegment which requires a Segment ID. While segment names can change the ID for that segment will not change.
+     * @param request GetAllSegmentsRequest
+     * @return GetAllSegmentsResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<GetAllSegmentsResult> GetAllSegments(final GetAllSegmentsRequest request) {
@@ -4551,6 +4863,8 @@ public class PlayFabAdminAPI {
 
     /**
      * List all segments that a player currently belongs to at this moment in time.
+     * @param request GetPlayersSegmentsRequest
+     * @return Async Task will return GetPlayerSegmentsResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<GetPlayerSegmentsResult>> GetPlayerSegmentsAsync(final GetPlayersSegmentsRequest request) {
@@ -4563,6 +4877,8 @@ public class PlayFabAdminAPI {
 
     /**
      * List all segments that a player currently belongs to at this moment in time.
+     * @param request GetPlayersSegmentsRequest
+     * @return GetPlayerSegmentsResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<GetPlayerSegmentsResult> GetPlayerSegments(final GetPlayersSegmentsRequest request) {
@@ -4609,6 +4925,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Allows for paging through all players in a given segment. This API creates a snapshot of all player profiles that match the segment definition at the time of its creation and lives through the Total Seconds to Live, refreshing its life span on each subsequent use of the Continuation Token. Profiles that change during the course of paging will not be reflected in the results. AB Test segments are currently not supported by this operation.
+     * @param request GetPlayersInSegmentRequest
+     * @return Async Task will return GetPlayersInSegmentResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<GetPlayersInSegmentResult>> GetPlayersInSegmentAsync(final GetPlayersInSegmentRequest request) {
@@ -4621,6 +4939,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Allows for paging through all players in a given segment. This API creates a snapshot of all player profiles that match the segment definition at the time of its creation and lives through the Total Seconds to Live, refreshing its life span on each subsequent use of the Continuation Token. Profiles that change during the course of paging will not be reflected in the results. AB Test segments are currently not supported by this operation.
+     * @param request GetPlayersInSegmentRequest
+     * @return GetPlayersInSegmentResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<GetPlayersInSegmentResult> GetPlayersInSegment(final GetPlayersInSegmentRequest request) {
@@ -4667,6 +4987,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Get all tags with a given Namespace (optional) from a player profile.
+     * @param request GetPlayerTagsRequest
+     * @return Async Task will return GetPlayerTagsResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<GetPlayerTagsResult>> GetPlayerTagsAsync(final GetPlayerTagsRequest request) {
@@ -4679,6 +5001,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Get all tags with a given Namespace (optional) from a player profile.
+     * @param request GetPlayerTagsRequest
+     * @return GetPlayerTagsResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<GetPlayerTagsResult> GetPlayerTags(final GetPlayerTagsRequest request) {
@@ -4725,6 +5049,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Remove a given tag from a player profile. The tag's namespace is automatically generated based on the source of the tag.
+     * @param request RemovePlayerTagRequest
+     * @return Async Task will return RemovePlayerTagResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<RemovePlayerTagResult>> RemovePlayerTagAsync(final RemovePlayerTagRequest request) {
@@ -4737,6 +5063,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Remove a given tag from a player profile. The tag's namespace is automatically generated based on the source of the tag.
+     * @param request RemovePlayerTagRequest
+     * @return RemovePlayerTagResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<RemovePlayerTagResult> RemovePlayerTag(final RemovePlayerTagRequest request) {
@@ -4783,6 +5111,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Abort an ongoing task instance.
+     * @param request AbortTaskInstanceRequest
+     * @return Async Task will return EmptyResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<EmptyResult>> AbortTaskInstanceAsync(final AbortTaskInstanceRequest request) {
@@ -4795,6 +5125,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Abort an ongoing task instance.
+     * @param request AbortTaskInstanceRequest
+     * @return EmptyResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<EmptyResult> AbortTaskInstance(final AbortTaskInstanceRequest request) {
@@ -4841,6 +5173,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Create an ActionsOnPlayersInSegment task, which iterates through all players in a segment to execute action.
+     * @param request CreateActionsOnPlayerSegmentTaskRequest
+     * @return Async Task will return CreateTaskResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<CreateTaskResult>> CreateActionsOnPlayersInSegmentTaskAsync(final CreateActionsOnPlayerSegmentTaskRequest request) {
@@ -4853,6 +5187,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Create an ActionsOnPlayersInSegment task, which iterates through all players in a segment to execute action.
+     * @param request CreateActionsOnPlayerSegmentTaskRequest
+     * @return CreateTaskResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<CreateTaskResult> CreateActionsOnPlayersInSegmentTask(final CreateActionsOnPlayerSegmentTaskRequest request) {
@@ -4899,6 +5235,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Create a CloudScript task, which can run a CloudScript on a schedule.
+     * @param request CreateCloudScriptTaskRequest
+     * @return Async Task will return CreateTaskResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<CreateTaskResult>> CreateCloudScriptTaskAsync(final CreateCloudScriptTaskRequest request) {
@@ -4911,6 +5249,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Create a CloudScript task, which can run a CloudScript on a schedule.
+     * @param request CreateCloudScriptTaskRequest
+     * @return CreateTaskResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<CreateTaskResult> CreateCloudScriptTask(final CreateCloudScriptTaskRequest request) {
@@ -4957,6 +5297,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Delete a task.
+     * @param request DeleteTaskRequest
+     * @return Async Task will return EmptyResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<EmptyResult>> DeleteTaskAsync(final DeleteTaskRequest request) {
@@ -4969,6 +5311,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Delete a task.
+     * @param request DeleteTaskRequest
+     * @return EmptyResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<EmptyResult> DeleteTask(final DeleteTaskRequest request) {
@@ -5015,6 +5359,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Get information about a ActionsOnPlayersInSegment task instance.
+     * @param request GetTaskInstanceRequest
+     * @return Async Task will return GetActionsOnPlayersInSegmentTaskInstanceResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<GetActionsOnPlayersInSegmentTaskInstanceResult>> GetActionsOnPlayersInSegmentTaskInstanceAsync(final GetTaskInstanceRequest request) {
@@ -5027,6 +5373,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Get information about a ActionsOnPlayersInSegment task instance.
+     * @param request GetTaskInstanceRequest
+     * @return GetActionsOnPlayersInSegmentTaskInstanceResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<GetActionsOnPlayersInSegmentTaskInstanceResult> GetActionsOnPlayersInSegmentTaskInstance(final GetTaskInstanceRequest request) {
@@ -5073,6 +5421,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Get detail information about a CloudScript task instance.
+     * @param request GetTaskInstanceRequest
+     * @return Async Task will return GetCloudScriptTaskInstanceResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<GetCloudScriptTaskInstanceResult>> GetCloudScriptTaskInstanceAsync(final GetTaskInstanceRequest request) {
@@ -5085,6 +5435,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Get detail information about a CloudScript task instance.
+     * @param request GetTaskInstanceRequest
+     * @return GetCloudScriptTaskInstanceResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<GetCloudScriptTaskInstanceResult> GetCloudScriptTaskInstance(final GetTaskInstanceRequest request) {
@@ -5131,6 +5483,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Query for task instances by task, status, or time range.
+     * @param request GetTaskInstancesRequest
+     * @return Async Task will return GetTaskInstancesResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<GetTaskInstancesResult>> GetTaskInstancesAsync(final GetTaskInstancesRequest request) {
@@ -5143,6 +5497,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Query for task instances by task, status, or time range.
+     * @param request GetTaskInstancesRequest
+     * @return GetTaskInstancesResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<GetTaskInstancesResult> GetTaskInstances(final GetTaskInstancesRequest request) {
@@ -5189,6 +5545,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Get definition information on a specified task or all tasks within a title.
+     * @param request GetTasksRequest
+     * @return Async Task will return GetTasksResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<GetTasksResult>> GetTasksAsync(final GetTasksRequest request) {
@@ -5201,6 +5559,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Get definition information on a specified task or all tasks within a title.
+     * @param request GetTasksRequest
+     * @return GetTasksResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<GetTasksResult> GetTasks(final GetTasksRequest request) {
@@ -5247,6 +5607,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Run a task immediately regardless of its schedule.
+     * @param request RunTaskRequest
+     * @return Async Task will return RunTaskResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<RunTaskResult>> RunTaskAsync(final RunTaskRequest request) {
@@ -5259,6 +5621,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Run a task immediately regardless of its schedule.
+     * @param request RunTaskRequest
+     * @return RunTaskResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<RunTaskResult> RunTask(final RunTaskRequest request) {
@@ -5305,6 +5669,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Update an existing task.
+     * @param request UpdateTaskRequest
+     * @return Async Task will return EmptyResult
      */
     @SuppressWarnings("unchecked")
     public FutureTask<PlayFabResult<EmptyResult>> UpdateTaskAsync(final UpdateTaskRequest request) {
@@ -5317,6 +5683,8 @@ public class PlayFabAdminAPI {
 
     /**
      * Update an existing task.
+     * @param request UpdateTaskRequest
+     * @return EmptyResult
      */
     @SuppressWarnings("unchecked")
     public PlayFabResult<EmptyResult> UpdateTask(final UpdateTaskRequest request) {

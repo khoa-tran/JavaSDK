@@ -1,36 +1,33 @@
-Java Getting Started Guide
-----
+# Java Getting Started Guide
 
 This guide will help you make your first API call in Java.
 
-Java Project Setup
-----
+## Java Project Setup
 
 * OS: This guide is written for Windows 10, however it should also work fine with a Mac
 * Installation
-  * Download and install the latest JDK
-    * http://www.oracle.com/technetwork/java/javase/downloads/index.html
-  * Download the PlayFab JavaSDK
-    * https://api.playfab.com/sdks/download/java
+  * Download and install [Apache Maven](https://maven.apache.org/download.cgi)
+  * Download and install the [latest Java Development Kit (JDK)](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
+  * Download the [PlayFab JavaSDK](https://api.playfab.com/sdks/download/java)
     * Download the zip file, and extract it to a location of your choice {PlayFabJavaLocation}
 * New Project Setup
-  * Create a new empty folder for your JavaGettingStarted project
-    * Create a new empty text file called GettingStarted.java
+  * Create a new empty folder for your JavaGettingStarted project {NewProjectFolder}
+    * Import the PlayFab JavaSDK into this project
+      * In Windows-Explorer, navigate to [{PlayFabJavaLocation}/PlayFabClientSDK/](https://github.com/PlayFab/JavaSDK/tree/master/PlayFabClientSDK/)
+      * Select the src folder, and copy it to {NewProjectFolder}
+    * Create a new empty text file called pom.xml in {NewProjectFolder}
       * We will modify this file in the next section
-  * Import the PlayFab JavaSDK into this project
-    * In Windows-Explorer, navigate to {PlayFabJavaLocation}/PlayFabClientSDK/src
-    * Select everything in this folder (1 subfolder, and 2 jar files)
-    * Copy it to your project folder
-* Your project folder should look like this:
-  * ![Java image](/images/Java/Installed.png)
+    * Navigate to: {NewProjectFolder}/src/main/java
+      * Create a new empty text file called GettingStarted.java (Full path: {NewProjectFolder}/src/main/java/GettingStarted.java )
+      * We will modify this file in the next section
 * PlayFab Installation Complete!
 
-Set up your first API call
-----
+## Set up your first API call
 
 This guide will provide the minimum steps to make your first PlayFab API call. Confirmation will be visible as console-output text.
 
 In your favorite text-editor, update the contents of GettingStarted.java as follows:
+
 ```Java
 import java.util.concurrent.*;
 import java.util.*;
@@ -109,8 +106,7 @@ public class GettingStarted
   * ![Java image](/images/Java/CmdExe.png)
   * We will use this window in the next section to execute our program
 
-Finish and Execute
-----
+## Finish and Execute
 
 * In the command window, enter the following sequence of commands:
   * javac GettingStarted.java
@@ -123,8 +119,7 @@ Finish and Execute
   * https://api.playfab.com/
 * Happy coding!
 
-Deconstruct the code
-----
+## Deconstruct the code
 
 This optional last section describes every line in GettingStarted.java in detail.
 

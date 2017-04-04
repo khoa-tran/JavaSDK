@@ -3,9 +3,9 @@ package com.playfab;
 import com.playfab.PlayFabErrors.ErrorCallback;
 
 public class PlayFabSettings {
-    public static String SdkVersion = "0.46.170313";
-    public static String BuildIdentifier = "javasdk_manual";
-    public static String SdkVersionString = "JavaSDK-0.46.170313";
+    public static String SdkVersion = "0.47.170403";
+    public static String BuildIdentifier = "jbuild_javasdk_1";
+    public static String SdkVersionString = "JavaSDK-0.47.170403";
 
     public static ErrorCallback GlobalErrorHandler;    
     public static String AdvertisingIdType = null; // Set this to the appropriate AD_TYPE_X constant below
